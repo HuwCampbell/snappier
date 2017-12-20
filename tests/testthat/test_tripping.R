@@ -19,5 +19,10 @@ test_that("compression and decompression are bijective", {
     , function(x) { expect_equal (decompress( compress (x)), x) }
   )
 
+  forall(
+      gen.map(as.raw, gen.c(0:255))
+    , function(x) { expect_equal (decompress_raw( compress_raw (x)), x) }
+  )
+
   expect_equal("snappy compressed", decompress( compress ("snappy compressed")) )
 })
