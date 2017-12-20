@@ -1,0 +1,13 @@
+Package: snappier
+Title: Snappy compression bindings
+Version: 0.0.1.0
+Authors@R: person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
+Description: Compression and decompression of snappy text.
+Depends: R (>= 3.3.1)
+License: BSD 3-clause License + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports: Rcpp
+RoxygenNote: 6.0.1
+Suggests: testthat, hedgehog
