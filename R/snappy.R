@@ -42,7 +42,7 @@
 #'
 #'   \code{decompress_raw} returns the a raw bytes decoded from
 #'      its input. When passed bytes which are not snappy
-#'      compressed, this function will emit a stop condition.
+#'      compressed, this function will return NULL.
 #'
 #' @examples
 #' library(snappier)

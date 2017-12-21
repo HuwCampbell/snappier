@@ -2,13 +2,10 @@ library(hedgehog)
 
 biglist <- function( elements, from = 0, to = 10000 ) {
   gen.with(gen.element(from:to), function(num) {
-    gen.map(
-      function(vec) { paste(vec, collapse = "")}
-    , gen.shrink( shrink.list,
-        gen.impure(function(g_size) {
-          sample( elements , size = num, replace = T)
-        })
-      )
+    gen.shrink( shrink.list,
+      gen.impure(function(g_size) {
+        paste(sample( elements , size = num, replace = T), collapse = "")
+      })
     )
   })
 }
@@ -20,7 +17,7 @@ test_that("compression and decompression are bijective", {
   )
 
   forall(
-      gen.map(as.raw, gen.c(0:255))
+      gen.map(as.raw, gen.c(gen.element(0:255), to = 50))
     , function(x) { expect_equal (decompress_raw( compress_raw (x)), x) }
   )
 
