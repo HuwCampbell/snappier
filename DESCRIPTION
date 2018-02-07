@@ -1,10 +1,17 @@
 Package: snappier
-Title: Compress and Decompress Snappy Encoded Data
+Title: Compress and Decompress 'Snappy' Encoded Data
 Version: 0.0.1.0
-Authors@R: person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
-Description: Compression and decompression with snappy.
+Authors@R: c(
+    person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
+  , person("Jeff", "Dean", role = "ctb")
+  , person("Sanjay", "Ghemawat", role = "ctb")
+  , person("Steinar", "Gunderson", role = "ctb")
+  , person("Martin", "Gieseking", email = "martin.gieseking@uos.de", role = "ctb")
+  , person("Google Inc.", role = "cph")
+  )
+Description: Compression and decompression with 'Snappy'.
 Depends: R (>= 3.3.0)
-License: BSD 3-clause License + file LICENSE
+License: BSD_3_clause + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
