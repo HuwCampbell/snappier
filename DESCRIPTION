@@ -1,6 +1,6 @@
 Package: snappier
 Title: Compress and Decompress 'Snappy' Encoded Data
-Version: 0.0.1.0
+Version: 0.1.0
 Authors@R: c(
     person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
   , person("Jeff", "Dean", role = "ctb")
