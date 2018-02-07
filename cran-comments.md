@@ -1,3 +1,16 @@
+## Resubmission
+This is a resubmission, answering the comments from
+Swetlana Herbrandt. In this version I have:
+
+* Written software names in single quotes (i.e. 'Snappy')
+  in title and description.
+
+* Added the original Google employee authors; the author
+  of the C bindings; and Google Inc., to the authors list
+  in the description file.
+
+* Amended the license clause and file
+
 ## Test environments
 * local OS X install, R 3.3.1
 * Centos
