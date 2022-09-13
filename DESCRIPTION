@@ -1,6 +1,6 @@
 Package: snappier
 Title: Compress and Decompress 'Snappy' Encoded Data
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
   , person("Jeff", "Dean", role = "ctb")
@@ -8,6 +8,9 @@ Authors@R: c(
   , person("Steinar", "Gunderson", role = "ctb")
   , person("Martin", "Gieseking", email = "martin.gieseking@uos.de", role = "ctb")
   , person("Google Inc.", role = "cph")
+  )
+Maintainers@R: c(
+    person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
   )
 Description: Compression and decompression with 'Snappy'.
 Depends: R (>= 3.3.0)
