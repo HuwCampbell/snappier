@@ -9,10 +9,9 @@ Authors@R: c(
   , person("Martin", "Gieseking", email = "martin.gieseking@uos.de", role = "ctb")
   , person("Google Inc.", role = "cph")
   )
-Maintainers@R: c(
-    person("Huw", "Campbell", email = "huw.campbell@gmail.com", role = c("aut", "cre"))
-  )
-Description: Compression and decompression with 'Snappy'.
+Description: Provides compression and decompression of 'Snappy' encoded data.
+  Includes and provides bindings to the 'Snappy' compression library, with a
+  safe R interface.
 Depends: R (>= 3.3.0)
 License: BSD_3_clause + file LICENSE
 Encoding: UTF-8
